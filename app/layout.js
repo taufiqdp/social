@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
@@ -8,7 +9,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Taufiq Socials",
+  title: "Taufiq Dwi Purnomo",
   description: "Connect with Taufiq and explore their social presence",
   openGraph: {
     title: "Taufiq Socials",
@@ -20,7 +21,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taufiq Socials",
+    title: "Taufiq Dwi Purnomo",
     description: "Connect with Taufiq and explore their social presence",
     images: ["https://social.taufiqdp.com/twitter-image.png]"],
   },
@@ -29,7 +30,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={geistMono.variable}>{children}</body>
+      <body className={geistMono.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
