@@ -10,21 +10,25 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Taufiq Dwi Purnomo",
-  description: "Connect with Taufiq and explore their social presence",
+  description:
+    "Hey there! Join me on my journey and discover all the ways we can connect.",
   openGraph: {
-    title: "Taufiq Socials",
-    description: "Connect with Taufiq and explore their social presence",
+    title: "My Personal Links",
+    description:
+      "Hey there! Join me on my journey and discover all the ways we can connect.",
     url: "https://social.taufiqdp.com",
-    siteName: "Taufiq Socials",
+    siteName: "Taufiq",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Taufiq Dwi Purnomo",
-    description: "Connect with Taufiq and explore their social presence",
-    images: ["https://social.taufiqdp.com/twitter-image.png]"],
+    description:
+      "Hey there! Join me on my journey and discover all the ways we can connect.",
+    images: ["https://social.taufiqdp.com/twitter-image.png"],
   },
+  metadataBase: new URL("https://social.taufiqdp.com"),
 };
 
 export default function RootLayout({ children }) {
