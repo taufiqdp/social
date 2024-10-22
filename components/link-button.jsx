@@ -1,6 +1,9 @@
-import { Code } from "lucide-react";
-
-export default function LinkButton({ href, icon: Icon, text }) {
+export default function LinkButton({
+  href,
+  icon: Icon,
+  text,
+  subIcon: SubIcon,
+}) {
   return (
     <a
       href={href}
@@ -12,7 +15,7 @@ export default function LinkButton({ href, icon: Icon, text }) {
         <Icon className="mr-3" size={18} />
         <span>{text}</span>
       </div>
-      <Code
+      <SubIcon
         size={16}
         className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       />
