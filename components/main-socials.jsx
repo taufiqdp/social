@@ -133,7 +133,11 @@ export function MainSocials() {
           ))}
         </div>
         <div className="mt-8 text-center text-gray-500 text-xs">
-          <p>&copy; {new Date().getFullYear()} Taufiq Dwi Purnomo</p>
+          <p>
+            &copy;{" "}
+            <span suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
+            Taufiq Dwi Purnomo
+          </p>
         </div>
       </div>
     </div>
